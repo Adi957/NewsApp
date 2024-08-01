@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home:
-          SplashScreenHandler(), // Use SplashScreenHandler to manage splash and navigation
+          SplashScreenHandler(), // Using SplashScreenHandler to manage splash and navigation
     );
   }
 }
