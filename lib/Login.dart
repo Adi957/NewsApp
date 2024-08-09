@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:newsapp/View/home_screen.dart'; // Adjust the import according to our project structure
-import 'package:newsapp/forgot.dart'; // Adjust the import according to our project structure
-import 'package:newsapp/signup.dart'; // Adjust the import according to our project structure
+import 'package:newsapp/View/home_screen.dart'; 
+import 'package:newsapp/forgot.dart'; 
+import 'package:newsapp/signup.dart'; 
 
 class Login extends StatefulWidget {
   const Login({super.key});

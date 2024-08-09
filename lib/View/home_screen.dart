@@ -147,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 future: newsViewModel.fetchNewChannelHeadlinesApi(name),
                 builder: (BuildContext context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return Center(
+                    return const Center(
                       child: SpinKitCircle(
                         size: 50,
                         color: Colors.black,

@@ -6,6 +6,7 @@ import 'package:newsapp/repository/news_repository.dart';
 //import 'package:http/http.dart' as http;
 
 class NewsViewModel {
+
   final _rep = NewsRepository();
 
   Future<NewsChannelsHeadlinesModel> fetchNewChannelHeadlinesApi(
@@ -19,3 +20,4 @@ class NewsViewModel {
     return response;
   }
 }
+

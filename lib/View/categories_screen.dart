@@ -94,11 +94,11 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                         child: Container(
                       height: height * 0.9,
                       color: Color.fromARGB(255, 176, 251, 255),
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.all(
+                            padding: EdgeInsets.all(
                                 16.0), // Adjust padding as needed
                             child: Text(
                               "NEWS Categories Page",
@@ -117,7 +117,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                     size: 70,
                                     color: Colors.blue,
                                   ),
-                                  const SizedBox(
+                                  SizedBox(
                                       height:
                                           20), // Add space between spinner and text
                                   Text(
@@ -133,43 +133,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                           ),
                         ],
                       ),
-                    )
-
-                        // Container(
-                        //     color: Color.fromARGB(255, 176, 251, 255),
-                        //     child: Center(
-                        //       child: Column(
-                        //         mainAxisAlignment: MainAxisAlignment.center,
-                        //         children: [
-                        //           // Image.asset(
-                        //           //   'images/error_image.jpg',
-                        //           //   fit: BoxFit.cover,
-                        //           //   width: width * 0.9,
-                        //           //   height: height * 0.5,
-                        //           // ),
-                        //           Text("NEWS Categories Page",
-                        //               style: TextStyle(
-                        //                   fontSize: 20,
-                        //                   fontWeight: FontWeight.w800)),
-                        //           SpinKitCircle(
-                        //             size: 70,
-                        //             color: Colors.blue,
-                        //           ),
-                        //           Text(
-                        //             'Oops! 😥 No Data available at the moment',
-                        //             style: TextStyle(
-                        //                 fontSize: 14,
-                        //                 fontWeight: FontWeight.w800),
-                        //           ),
-                        //         ],
-                        //       ),
-
-                        //     )
-                        //     )
-
-                        );
-
-                    //  Text('Error: ${snapshot.error}'));
+                    ));
                   } else if (!snapshot.hasData ||
                       snapshot.data!.articles!.isEmpty) {
                     return Center(child: Text('No articles available.'));
